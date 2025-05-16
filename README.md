@@ -54,18 +54,15 @@ Navigate to `http://localhost:5000` in your web browser.
 ```
 diabetes_prediction/
 │
-├── app.py                  # Main Flask application
-├── cleanup.py              # Automatic cleanup utilities
-├── log.py                  # Logging configuration
+├── models_training.py      # Main model training script
+├── eda.py                  # Exploratory Data Analysis
 ├── data/                   # Dataset directory
 │   └── Healthcare-Diabetes.csv
-├── saved_models/           # Trained machine learning models
-├── static/                 # Static files (CSS, JS, images)
-│   └── images/
-│       └── explanations/   # Generated explanation visualizations
-├── templates/              # HTML templates
-└── logs/                   # Application logs
+└── saved_models/          # Trained machine learning models
+    └── xgboost_model.pkl
 ```
+
+Note: This repository contains only the training components of the project. For the full implementation including the web application, please contact the repository owner.
 
 ## Technology Stack
 - **Backend**: Python, Flask
