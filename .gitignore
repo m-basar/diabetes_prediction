@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
+
+# Models (if too large or sensitive)
+models__training/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Hide all Python files by default
+*.py
+
+# EXCEPTIONS - Allow only training files
+!*_training.py
+!*train*.py
+!training/*.py
+!models_training.py
+!eda.py
+
+# Specifically hide these files
+app.py
+cleanup.py
+log.py
+
+# Hide sensitive directories
+/static/
+/templates/
+/logs/

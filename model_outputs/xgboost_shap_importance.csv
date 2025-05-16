@@ -1,0 +1,16 @@
+Feature,SHAP_Importance
+Glucose,1.6269708
+BMI_Age_Product,1.0629908
+BMI,0.6998136
+DiabetesPedigreeFunction,0.65680003
+Insulin,0.34562996
+Age,0.28722176
+Pregnancies,0.27799574
+Glucose_to_Insulin_Ratio,0.27442333
+BloodPressure,0.27066338
+SkinThickness,0.2307349
+Has_High_Glucose,0.0
+Has_High_BP,0.0
+Has_High_BMI,0.0
+Log_Insulin,0.0
+Log_DiabetesPedigreeFunction,0.0
