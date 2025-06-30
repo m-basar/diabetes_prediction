@@ -1,181 +1,153 @@
-# Diabetes Prediction System
+# Diabetes Analyser - Explainable AI System
+<p align="left">
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white">
+  <img alt="Flask" src="https://img.shields.io/badge/Flask-2.0-black?logo=flask&logoColor=white">
+  <img alt="License" src="https://img.shields.io/badge/License-MIT-green">
+</p>
 
-## Important Notice
-**Note**: This repository only contains the EDA and model training code. The full implementation (web application, API, authentication) is not publicly available. If you're interested in the complete codebase, please contact me directly.
+A comprehensive web application for diabetes prediction using machine learning, built as part of my BSc Computer Science degree. This system provides accurate risk assessment, personalised insights, and detailed explanations using **SHAP** and **LIME** to make AI transparent for healthcare professionals and patients.
 
-## Overview
-A comprehensive web application for diabetes prediction using machine learning. This system provides accurate risk assessment, personalized insights, and detailed explanations for healthcare professionals and patients.
-![image](https://github.com/user-attachments/assets/5557d76b-8093-44e4-b61d-bb3c034357c7)
-
-
-## Features
-- **Diabetes Risk Prediction**: Uses machine learning to predict diabetes risk
-- **Multi-level User Access**:
-  - Admin: System management and oversight
-  - Doctor: Patient management and detailed analytics
-  - Patient: Personal risk assessment and recommendations
-    ![image](https://github.com/user-attachments/assets/27d29c3b-0e82-437d-a218-3e39b6a3bb1a)
-
-- **Explainable AI**:
-  - SHAP (SHapley Additive exPlanations) visualizations
-  - LIME (Local Interpretable Model-agnostic Explanations)
-  - Permutation importance analysis
-- **Robust Backend**:
-  - Secure user authentication system
-  - Automated visualization cleanup
-  - Comprehensive logging
-
-## Installation
-
-```bash
-
-
-# Create and activate a virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-## Usage
-
-```bash
-# Run the Flask application
-python app.py
-```
-
-Navigate to `http://localhost:5000` in your web browser.
-
-### Default Users
-- Admin: username `admin`, password `admin123`
-- Doctor: username `doctor`, password `doctor123`
-- Patient: username `patient`, password `patient123`
-
-Note: This repository contains only the training components of the project. For the full implementation including the web application, please contact the repository owner.
-
-## Technology Stack
-- **Backend**: Python, Flask
-- **Data Processing**: Pandas, NumPy
-- **Machine Learning**: Scikit-learn, SHAP, LIME
-- **Visualization**: Matplotlib, Seaborn
-- **Scheduling**: APScheduler
-- **Authentication**: Flask-Login
-
-## Requirements
-- Python 3.8+
-- Dependencies listed in requirements.txt:
-  - flask
-  - pandas
-  - numpy
-  - scikit-learn
-  - matplotlib
-  - seaborn
-  - shap
-  - lime
-  - joblib
-  - apscheduler
-  - flask-login
-
-## Development
-To contribute to this project:
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## Contact
-For access to the full implementation code or any questions about this project, please reach out to me directly.
-
-## License
-MIT License
-
-## Acknowledgements
-- The dataset used is based on the [Healthcare-Diabetes dataset from Kaggle](https://www.kaggle.com/datasets/nanditapore/healthcare-diabetes)
-
-- This project was created as part of my BSc Computer Science Independent Study
-
-## User Guide
-
-### System Setup
-1. **Prerequisites**:
-   - Python 3.8 or higher installed on your system
-   - Git installed (optional, for cloning the repository)
-   - A modern web browser
-
-2. **Getting Started**:
-   ```bash
-   # Clone or download the repository
-   git clone https://github.com/m-basar/diabetes_prediction.git # Or download and extract the ZIP file
-   cd diabetes_prediction
-
-   # Create and activate a virtual environment
-   python -m venv venv
-   .\venv\Scripts\activate  # On Windows
-   
-   # Install dependencies
-   pip install -r requirements.txt
-   ```
-
-3. **Running the Application**:
-   ```bash
-   python app.py
-   ```
-   The application will be available at `http://localhost:5000`
-
-### Using the System
-
-1. **Login**:
-   - Use the provided test credentials:
-     - Admin: username `admin`, password `admin123`
-     - Doctor: username `doctor`, password `doctor123`
-     - Patient: username `patient`, password `patient123`
-
-2. **Navigation**:
-   - The dashboard shows an overview of the system
-   - Use the navigation menu to access different features
-   - Each user role has different permissions and views
-
-3. **Making Predictions**:
-   - Input patient data in the provided form
-   - Click "Predict" to get the diabetes risk assessment
-   - View detailed explanations of the prediction
-   - Export results if needed
-![image](https://github.com/user-attachments/assets/585849a8-1568-424d-9b13-8488162a8c3b)
-
-4. **Viewing Visualizations**:
-   - Access the EDA (Exploratory Data Analysis) section
-   - Interactive plots are available in the `/diabetes_eda_plots` directory
-   - Hover over plots for detailed information
-
-5. **Understanding Results**:
-   - The system provides probability scores
-   - SHAP and LIME explanations show feature importance
-   - Red indicators suggest higher risk factors
-   - Green indicators suggest lower risk factors
-![image](https://github.com/user-attachments/assets/2e402c4e-7b0f-4f69-8112-f3239ae06474)
-![image](https://github.com/user-attachments/assets/0d55dd2f-ea5f-4571-824a-3f3a5b5efc7c)
-![image](https://github.com/user-attachments/assets/7b58b55b-5a73-49c9-82a0-ab50fb1f03c4)
-![image](https://github.com/user-attachments/assets/a1fba249-9c37-486d-b507-98b8b79b94c2)
-
-### Troubleshooting
-
-1. **Common Issues**:
-   - If the application doesn't start, ensure all dependencies are installed
-   - Check if the required ports are available (default: 5000)
-   - Verify Python version compatibility
-
-2. **Error Handling**:
-   - Check the `logs` directory for detailed error messages
-   - Ensure the database connection is properly configured
-   - Verify file permissions in the project directory
-
-3. **Support**:
-   - Technical issues: Check the logs directory
-   - For access issues: Contact the system administrator
-   - For clinical questions: Consult with healthcare professionals
+> ### **Important Notice**
+> This public repository contains the core logic (EDA, model training, etc.). The full Flask web application with its user interface and multi-level authentication is in a **private repository**. Please [contact me](#-contact) directly for enquiries about the complete implementation.
 
 ---
 
-**Note**: This system is designed for educational and research purposes and should not replace professional medical advice.
+### 📸 Project Showcase
+
+<table>
+  <tr>
+    <td align="center"><strong>Login & User Roles</strong></td>
+    <td align="center"><strong>Prediction & Results</strong></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/27d29c3b-0e82-437d-a218-3e39b6a3bb1a" alt="Login Screen"></td>
+    <td><img src="https://github.com/user-attachments/assets/585849a8-1568-424d-9b13-8488162a8c3b" alt="Prediction Results"></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>SHAP Explanations</strong></td>
+    <td align="center"><strong>LIME Explanations</strong></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/0d55dd2f-ea5f-4571-824a-3f3a5b5efc7c" alt="SHAP Plot"></td>
+    <td><img src="https://github.com/user-attachments/assets/a1fba249-9c37-486d-b507-98b8b79b94c2" alt="LIME Plot"></td>
+  </tr>
+</table>
+
+---
+
+### 🚀 Core Features
+
+- **Accurate Risk Prediction**: Utilises machine learning to predict diabetes risk with high precision.
+- **Explainable AI (XAI)**: Integrates SHAP, LIME, and permutation importance to explain *why* a prediction was made.
+- **Multi-level User Access**: Secure roles for Admins, Doctors, and Patients, each with tailored dashboards and permissions.
+- **Robust Backend**: Features secure user authentication, automated task scheduling with APScheduler, and comprehensive logging.
+
+---
+
+### 🛠️ Technology Stack
+
+| Category             | Technologies                                            |
+| -------------------- | ------------------------------------------------------- |
+| **Backend** | `Python`, `Flask`                                       |
+| **Data & ML** | `Pandas`, `NumPy`, `Scikit-learn`, `SHAP`, `LIME`       |
+| **Authentication** | `Flask-Login`                                           |
+| **Scheduling** | `APScheduler`                                           |
+| **Visualisation** | `Matplotlib`, `Seaborn`                                 |
+
+---
+
+### ⚙️ Local Setup & Usage
+
+Follow these steps to get the system running locally.
+
+**1. Clone the Repository**
+```bash
+git clone [https://github.com/m-basar/diabetes_prediction.git](https://github.com/m-basar/diabetes_prediction.git)
+cd diabetes_prediction
+```
+
+**2. Create and Activate a Virtual Environment**
+```bash
+# For Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+# For macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+
+**3. Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**4. Run the Application**
+```bash
+python app.py
+```
+Navigate to `http://127.0.0.1:5000` in your browser.
+
+**5. Default Login Credentials**
+- **Admin:** `admin` / `admin123`
+- **Doctor:** `doctor` / `doctor123`
+- **Patient:** `patient` / `patient123`
+
+---
+
+### 📖 Detailed User Guide & Troubleshooting
+
+For a more detailed walkthrough of the system's features, common issues, and error handling, please expand the section below.
+
+<details>
+<summary><b>Click to expand User Guide</b></summary>
+  
+### Using the System
+
+1.  **Login**: Use the provided test credentials for Admin, Doctor, or Patient roles.
+2.  **Navigation**: The main dashboard provides a system overview. Use the navigation menu to access features specific to your user role.
+3.  **Making Predictions**: Input patient data in the form, click "Predict", and view the detailed risk assessment and explanations.
+4.  **Understanding Results**: The system provides probability scores and uses SHAP/LIME to show feature importance. Red indicators suggest factors that increase risk, while green indicators suggest factors that decrease it.
+5.  **Viewing Visualizations**: The Exploratory Data Analysis (EDA) section contains interactive plots.
+
+### Troubleshooting
+
+1.  **Common Issues**:
+    -   If the application doesn't start, ensure all dependencies from `requirements.txt` are correctly installed in your virtual environment.
+    -   Check if port `5000` is available on your system.
+    -   Verify you are using Python 3.8 or higher.
+2.  **Error Handling**:
+    -   Check the `logs` directory for detailed error messages.
+    -   Ensure file permissions are correctly set in the project directory.
+3.  **Support**:
+    -   For technical issues, first consult the logs.
+    -   For access issues, contact the system administrator.
+    -   For clinical questions, please consult with qualified healthcare professionals.
+
+> **Disclaimer**: This system is designed for educational and research purposes and is not a substitute for professional medical advice.
+
+</details>
+
+---
+
+### 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+1.  Fork the repository.
+2.  Create a feature branch (`git checkout -b feature/NewFeature`).
+3.  Commit your changes (`git commit -m 'Add some NewFeature'`).
+4.  Push to the branch (`git push origin feature/NewFeature`).
+5.  Open a Pull Request.
+
+---
+
+### 📜 License & Acknowledgements
+
+- This project is licensed under the **MIT License**.
+- The dataset used is based on the [Healthcare-Diabetes dataset from Kaggle](https://www.kaggle.com/datasets/nanditapore/healthcare-diabetes).
+
+---
+
+### 📞 Contact
+
+If you have any questions or would like to discuss the full implementation, please don't hesitate to reach out.
