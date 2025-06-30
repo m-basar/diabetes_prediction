@@ -108,7 +108,7 @@ For a more detailed walkthrough of the system's features, common issues, and err
 2.  **Navigation**: The main dashboard provides a system overview. Use the navigation menu to access features specific to your user role.
 3.  **Making Predictions**: Input patient data in the form, click "Predict", and view the detailed risk assessment and explanations.
 4.  **Understanding Results**: The system provides probability scores and uses SHAP/LIME to show feature importance. Red indicators suggest factors that increase risk, while green indicators suggest factors that decrease it.
-5.  **Viewing Visualizations**: The Exploratory Data Analysis (EDA) section contains interactive plots.
+5.  **Viewing Visualisations**: The Exploratory Data Analysis (EDA) section contains interactive plots.
 
 ### Troubleshooting
 
