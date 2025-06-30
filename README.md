@@ -142,6 +142,7 @@ MIT License
    - Click "Predict" to get the diabetes risk assessment
    - View detailed explanations of the prediction
    - Export results if needed
+![image](https://github.com/user-attachments/assets/585849a8-1568-424d-9b13-8488162a8c3b)
 
 4. **Viewing Visualizations**:
    - Access the EDA (Exploratory Data Analysis) section
@@ -153,6 +154,10 @@ MIT License
    - SHAP and LIME explanations show feature importance
    - Red indicators suggest higher risk factors
    - Green indicators suggest lower risk factors
+![image](https://github.com/user-attachments/assets/2e402c4e-7b0f-4f69-8112-f3239ae06474)
+![image](https://github.com/user-attachments/assets/0d55dd2f-ea5f-4571-824a-3f3a5b5efc7c)
+![image](https://github.com/user-attachments/assets/7b58b55b-5a73-49c9-82a0-ab50fb1f03c4)
+![image](https://github.com/user-attachments/assets/a1fba249-9c37-486d-b507-98b8b79b94c2)
 
 ### Troubleshooting
 
