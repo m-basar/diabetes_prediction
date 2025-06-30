@@ -24,9 +24,7 @@ A comprehensive web application for diabetes prediction using machine learning. 
 ## Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/m-basar/diabetes_prediction.git
-cd diabetes_prediction
+
 
 # Create and activate a virtual environment
 python -m venv venv
@@ -49,18 +47,6 @@ Navigate to `http://localhost:5000` in your web browser.
 - Admin: username `admin`, password `admin123`
 - Doctor: username `doctor`, password `doctor123`
 - Patient: username `patient`, password `patient123`
-
-## Project Structure
-```
-diabetes_prediction/
-│
-├── models_training.py      # Main model training script
-├── eda.py                  # Exploratory Data Analysis
-├── data/                   # Dataset directory
-│   └── Healthcare-Diabetes.csv
-└── saved_models/          # Trained machine learning models
-    └── xgboost_model.pkl
-```
 
 Note: This repository contains only the training components of the project. For the full implementation including the web application, please contact the repository owner.
 
@@ -105,6 +91,81 @@ MIT License
 - The dataset used is based on the [Healthcare-Diabetes dataset from Kaggle](https://www.kaggle.com/datasets/nanditapore/healthcare-diabetes)
 
 - This project was created as part of my BSc Computer Science Independent Study
+
+## User Guide
+
+### System Setup
+1. **Prerequisites**:
+   - Python 3.8 or higher installed on your system
+   - Git installed (optional, for cloning the repository)
+   - A modern web browser
+
+2. **Getting Started**:
+   ```bash
+   # Clone or download the repository
+   git clone [repository-url] # Or download and extract the ZIP file
+   cd diabetes_prediction
+
+   # Create and activate a virtual environment
+   python -m venv venv
+   .\venv\Scripts\activate  # On Windows
+   
+   # Install dependencies
+   pip install -r requirements.txt
+   ```
+
+3. **Running the Application**:
+   ```bash
+   python app.py
+   ```
+   The application will be available at `http://localhost:5000`
+
+### Using the System
+
+1. **Login**:
+   - Use the provided test credentials:
+     - Admin: username `admin`, password `admin123`
+     - Doctor: username `doctor`, password `doctor123`
+     - Patient: username `patient`, password `patient123`
+
+2. **Navigation**:
+   - The dashboard shows an overview of the system
+   - Use the navigation menu to access different features
+   - Each user role has different permissions and views
+
+3. **Making Predictions**:
+   - Input patient data in the provided form
+   - Click "Predict" to get the diabetes risk assessment
+   - View detailed explanations of the prediction
+   - Export results if needed
+
+4. **Viewing Visualizations**:
+   - Access the EDA (Exploratory Data Analysis) section
+   - Interactive plots are available in the `/diabetes_eda_plots` directory
+   - Hover over plots for detailed information
+
+5. **Understanding Results**:
+   - The system provides probability scores
+   - SHAP and LIME explanations show feature importance
+   - Red indicators suggest higher risk factors
+   - Green indicators suggest lower risk factors
+
+### Troubleshooting
+
+1. **Common Issues**:
+   - If the application doesn't start, ensure all dependencies are installed
+   - Check if the required ports are available (default: 5000)
+   - Verify Python version compatibility
+
+2. **Error Handling**:
+   - Check the `logs` directory for detailed error messages
+   - Ensure the database connection is properly configured
+   - Verify file permissions in the project directory
+
+3. **Support**:
+   - Technical issues: Check the logs directory
+   - For access issues: Contact the system administrator
+   - For clinical questions: Consult with healthcare professionals
 
 ---
 
