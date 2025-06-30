@@ -14,6 +14,8 @@ A comprehensive web application for diabetes prediction using machine learning. 
   - Admin: System management and oversight
   - Doctor: Patient management and detailed analytics
   - Patient: Personal risk assessment and recommendations
+    ![image](https://github.com/user-attachments/assets/27d29c3b-0e82-437d-a218-3e39b6a3bb1a)
+
 - **Explainable AI**:
   - SHAP (SHapley Additive exPlanations) visualizations
   - LIME (Local Interpretable Model-agnostic Explanations)
