@@ -5,6 +5,8 @@
 
 ## Overview
 A comprehensive web application for diabetes prediction using machine learning. This system provides accurate risk assessment, personalized insights, and detailed explanations for healthcare professionals and patients.
+![image](https://github.com/user-attachments/assets/5557d76b-8093-44e4-b61d-bb3c034357c7)
+
 
 ## Features
 - **Diabetes Risk Prediction**: Uses machine learning to predict diabetes risk
