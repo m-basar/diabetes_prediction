@@ -5,7 +5,7 @@
 
 ## Overview
 A comprehensive web application for diabetes prediction using machine learning. This system provides accurate risk assessment, personalized insights, and detailed explanations for healthcare professionals and patients.
-
+![alt text](image.png)
 ## Features
 - **Diabetes Risk Prediction**: Uses machine learning to predict diabetes risk
 - **Multi-level User Access**:
@@ -103,7 +103,7 @@ MIT License
 2. **Getting Started**:
    ```bash
    # Clone or download the repository
-   git clone [repository-url] # Or download and extract the ZIP file
+   git clone https://github.com/m-basar/diabetes_prediction.git # Or download and extract the ZIP file
    cd diabetes_prediction
 
    # Create and activate a virtual environment
